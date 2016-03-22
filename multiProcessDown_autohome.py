@@ -285,12 +285,12 @@ def do(init_url):
     #测试单页面
     # getPages("/bbs/thread-c-537-5182021-1.html",aim_dir)
 
-    #单线程获取
+    #单进程获取
     # for list_url in url_pages:
     #     logging.debug( list_url )
     #     getList(list_url)
 
-    #多线程获取
+    #多进程获取
     cpu_cnt = multiprocessing.cpu_count()
     print "cpu_cnt:%s" % cpu_cnt
     pool = multiprocessing.Pool(cpu_cnt)
